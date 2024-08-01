@@ -1,8 +1,14 @@
-# React + Vite
+# ReactNews
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### ReactNews is a frontend app that allows you to view all current news in the present time.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- [React](https://reactjs.org/)
+- [Axios](https://axios-http.com/docs/intro)
+- [JS]
+- [HTML]
+- [CSS]
+
+In the near future, I will add typification using typescript, make it possible to go to another page when clicking on a news item with react-router-dom, and also add redux-toolkit.
