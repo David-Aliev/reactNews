@@ -4,6 +4,11 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 12px;
   box-sizing: border-box;
-  max-height: 1200px;
-  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .banners {
+    max-height: 1200px;
+    overflow-y: auto;
+  }
 }
