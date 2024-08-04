@@ -1,9 +1,7 @@
-import Header from "./components/Header/Header"
-import Main from './pages/Main/Main'
+import Header from "./components/Header/Header";
+import Main from "./pages/Main/Main.tsx";
 
 function App() {
-  
-
   return (
     <div>
       <Header />
@@ -11,7 +9,7 @@ function App() {
         <Main />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
