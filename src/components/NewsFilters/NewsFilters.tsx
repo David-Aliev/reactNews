@@ -5,6 +5,7 @@ import Categories from "../Categories/Categories";
 import Search from "../Search/Search.tsx";
 import Slider from "../Slider/Slider.tsx";
 import { CategoriesApiResponse, IFilters } from "../../interfaces";
+import { useTheme } from "../../context/ThemeContext.tsx";
 
 interface Props {
   filters: IFilters;
@@ -12,13 +13,14 @@ interface Props {
 }
 
 const NewsFilters = ({ filters, changeFilter }: Props) => {
+  const { isDark } = useTheme();
   const { data: dataCategories } = useFetch<CategoriesApiResponse, null>(
     getCategories
   );
   return (
     <div className={styles.filters}>
       {dataCategories ? (
-        <Slider>
+        <Slider isDark={isDark}>
           <Categories
             categories={dataCategories.categories}
             selectedCategory={filters.category}
