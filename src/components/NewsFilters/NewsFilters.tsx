@@ -25,7 +25,7 @@ const NewsFilters = ({ filters }: Props) => {
             categories={data.categories}
             selectedCategory={filters.category}
             setSelectedCategory={(category) =>
-              dispatch(setFilters({ key: "page_number", value: category }))
+              dispatch(setFilters({ key: "category", value: category }))
             }
           />
         </Slider>
